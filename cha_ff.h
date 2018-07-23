@@ -11,10 +11,7 @@
 typedef struct {
     double attack;               // attack time (ms)
     double release;              // release time (ms)
-    double maxdB;                // maximum signal (dB SPL)
-    int ear;                     // 0=left, 1=right
     int nchannel;                // number of channels
-    double cross_freq[DSL_MXCH]; // cross frequencies (Hz)
     double tkgain[DSL_MXCH];     // compression-start gain
     double cr[DSL_MXCH];         // compression ratio
     double tk[DSL_MXCH];         // compression-start kneepoint
